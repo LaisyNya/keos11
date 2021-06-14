@@ -472,9 +472,9 @@ async function starts() {
                 if (!isUser) return reply(mess.only.daftarB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
                 break*/
-	*/case 'creador':
-	    */case 'owner':
-                */case 'creator':
+	/*case 'creador':
+	    case 'owner':
+                case 'creator':
                 client.sendMessage(from, {displayname: "Shan", vcard: vcard}, MessageType.contact, { quoted: mek})
 		client.sendMessage(from, 'Aquí está el número del creador del bot\n\nhttps://wa.me/593967689722\n\nAqui puedes resolver tus preguntas y errores :)\n\n❗Este no es el numero del propietario del bot❗\n\nby shanduy',MessageType.text, { quoted: mek} )
                 break*/
@@ -496,7 +496,7 @@ async function starts() {
                 }
               await client.sendMessage(from, options, text)
                break
-               		       case 'ytmp3':
+               		      /* case 'ytmp3':
 					if (args.length < 1) return reply('Donde esta la URL?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					reply(mess.only.mpa)
@@ -519,7 +519,7 @@ async function starts() {
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
-					break
+					break*/
                                  case 'tts':
 				   client.updatePresence(from, Presence.recording) 
 				   if (args.length < 1) return client.sendMessage(from, 'Cual es el código de idioma?\n\nPara saber el codigo de idioma coloque el comando ${prefix}idioma', text, {quoted: mek})
@@ -573,7 +573,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', members_id, true)
+					mentions('╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 KEOS 〙', members_id, true)
 					break
                 case 'tagall2':
 				client.updatePresence(from, Presence.composing) 
@@ -586,7 +586,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 KEOS 〙', text, {quoted: mek})
 					break
                 case 'tagall3':
 				client.updatePresence(from, Presence.composing) 
@@ -599,7 +599,7 @@ async function starts() {
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 KEOS 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall4':
 				client.updatePresence(from, Presence.composing) 
@@ -612,7 +612,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionar A Todos 〙✪══\n╠➥'+teks+'╚═〘 KEOS 〙', text, {quoted: mek})
 					break
                 case 'tagall5':
 				client.updatePresence(from, Presence.composing) 
@@ -625,7 +625,7 @@ async function starts() {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencionando A Todos 〙✪══\n╠➥'+teks+'╚═〘 ShanBot 〙')
+					reply('╔══✪〘 Mencionando A Todos 〙✪══\n╠➥'+teks+'╚═〘 KEOS 〙')
 					break
 				case 'send':
 					var pc = body.slice(6)
@@ -687,7 +687,7 @@ async function starts() {
 					}, 2000)
                      setTimeout( () => {
 					client.updatePresence(from, Presence.composing) 
-					client.sendMessage(from, 'Chao Pa👋', text) // ur cods
+					client.sendMessage(from, 'Chao 👋', text) // ur cods
 					}, 0)
                      break
        /*case 'ownergrup':
@@ -699,7 +699,7 @@ async function starts() {
            }
            client.sendMessage(from, options, text, { quoted: mek } )
 				break*/
-                                      case 'kick':
+                                      /*case 'kick':
 					case 'pafuera':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
@@ -730,8 +730,8 @@ async function starts() {
 			       client.sendMessage(from, stdout, text, { quoted: mek })
 		           }
 	           })
-                  break
-                 case 'linkgroup':
+                  break*/
+                 /*case 'linkgroup':
 				case 'linkgrup':
 				case 'linkgc':
 				    client.updatePresence(from, Presence.composing) 
@@ -745,7 +745,7 @@ async function starts() {
                 case 'qrcode':
                 buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?data=${body.slice(8)}&size=1080%C3%971080`)
 				client.sendMessage(from, buff, image, {quoted: mek})
-				break
+				break*/
 		          		
 			case 'closegc':
 					client.updatePresence(from, Presence.composing) 
@@ -886,13 +886,13 @@ async function starts() {
                 break
                                 case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (isUser) return reply('Ya estas registrado gordo trolo 🧐')
+					if (isUser) return reply('Ya estas registrado 🧐')
 					if (args.length < 1) return reply(`Incorrecto \nCommand : ${prefix}daftar Nombre\nComando : ${prefix}daftar shanduy`)
 					var reg = body.slice(8)
 					var nombre = reg.split("|")[0];
                                                 user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Tucson 🤙🤪\`\`\`\n\n\`\`\`Hora: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`REGISTRADO ✅\`\`\`\n\n\`\`\`DNI: Enfermo mental\`\`\`\n\n\`\`\`Hora: ${time}\`\`\`\n\n\`\`\`Fecha: ${date}\`\`\`\n\n\`\`\`[Usuario]: ${nombre}\`\`\`\n\`\`\`[Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`Para usar el bot\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`enviar ${prefix}help\`\`\`\n\`\`\`\nTotal de usuários ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'welcome':
 					if (!isGroup) return reply(mess.only.group)
