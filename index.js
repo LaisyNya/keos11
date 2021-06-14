@@ -198,11 +198,11 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `Mi loco @${num.split('@')[0]}\nTodo bien NEFASTO!!!! Bienvenido a *${mdata.subject}* el mejor grupo una locura 👉😎👈\n\nUn gusto conocerte hijo de la maraca 😀\n\nOjito sigue las reglas del grupo si no, pa fuera mi loco los admins te eliminan 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nOjito con el spam 🧐\n\nby shanduy`
+				teks = `HOLA @${num.split('@')[0]}\nBienvenido a *${mdata.subject}* Grupo sin restricciones de contenido 👉😎👈\n\nUn gusto conocerte hijo del infierno 😀\n\nNada de spamear y ofender a los admins 🧐\n\nPara utilizar el bot registrate con el comando ${prefix}daftar y tu nombre\n\nPara ver los demas comandos utiliza ${prefix}help\n\nPortate bien, te vigilamos 🧐\n\nby KEOS`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `NOOOO se nos fue un NEFASTO 😎 @${num.split('@')[0]}👋\n\nQue dios lo bendiga 😎`
+				teks = `AHHHHH 😎 @${num.split('@')[0]}👋\n\nHa cagado 😎`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -253,17 +253,17 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando es solo para grupos!',
 					ownerG: '[❗] Este comando solo puede ser utilizado por un admin del grupo!',
-					ownerB: '[❗] Este comando solo lo usa ShanBot!',
+					ownerB: '[❗] Este comando solo lo usa KEOS!',
 					admin: '[❗] Este comando solo puede ser utilizado por administradores del grupo!',
 					Badmin: '[❗] Este comando solo se puede usar cuando el bot se convierte en administrador!',
-                                        pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos ❗*\n\nby shanduy',
-					attp: 'Calma crack estoy haciendo tu texto a sticker 👏\n\n*Esto puede demorar unos minutos*\n\nby shanduy',
-					imgs: 'Euu flaco 🥴\n\n*Convirtiendo tu Sticker a Imagen 🔄*\n\nby shanduy',
-					mpcancion: 'Calmaoooo estoy procesando 😎\n\n*Convirtiendo de MP4 a MP3 🔄*\n\nby shanduy',
-					mpa: 'Euu flaco 🥴\n\n*Estoy decargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\nby shanduy',
-                                        mpv: 'Calmao pa 😎\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nby shanduy',
-					musica: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube ❗*\n\nby shanduy',
-					daftarB: `「NEFASTOOOOO」\n\nPERO PAAAAAAAAAA!\n\nNo estas registrado en mi base de datos 😳 \n\nComando : ${prefix}daftar Nombre\nEjemplo : ${prefix}daftar shanduy`,
+                                        pegatina: 'Calma crack estoy haciendo tu sticker 👏\n\n*Recuerda los stickersgif son de 6 segundos ❗*\n\nby KEOS',
+					attp: 'Calma crack estoy haciendo tu texto a sticker 👏\n\n*Esto puede demorar unos minutos*\n\nby KEOS',
+					imgs: 'Euu flaco 🥴\n\n*Convirtiendo tu Sticker a Imagen 🔄*\n\nby KEOS',
+					mpcancion: 'Calmaoooo estoy procesando 😎\n\n*Convirtiendo de MP4 a MP3 🔄*\n\nby KEOS',
+					mpa: 'Euu flaco 🥴\n\n*Estoy decargando tu cancion 🔄*\n\nAguarde un momento, por favor\n\nby KEOS',
+                                        mpv: 'Calmao pa 😎\n\n*Estoy descargando tu video 🔄*\n\nAguarde un momento, por favor\n\nby KEOS',
+					musica: 'Calmao pa estoy bucando tu canción 😎\n\n*Recuerda colocar bien el nombre de la cancion o el link del video de youtube ❗*\n\nby KEOS',
+					daftarB: `「ERROR」\n\nAHHH!\n\nNo estas registrado en mi base de datos \n\nComando : ${prefix}daftar Nombre\nEjemplo : ${prefix}daftar KEOS`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -317,7 +317,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nombre*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nFelicidades weon!! 🎉🎉`)
+                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nombre*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nFelicidades!! 🎉🎉`)
                 }
             } catch (err) {
                 console.error(err)
@@ -472,12 +472,12 @@ async function starts() {
                 if (!isUser) return reply(mess.only.daftarB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
                 break*/
-	case 'creador':
-	    case 'owner':
-                case 'creator':
+	*/case 'creador':
+	    */case 'owner':
+                */case 'creator':
                 client.sendMessage(from, {displayname: "Shan", vcard: vcard}, MessageType.contact, { quoted: mek})
 		client.sendMessage(from, 'Aquí está el número del creador del bot\n\nhttps://wa.me/593967689722\n\nAqui puedes resolver tus preguntas y errores :)\n\n❗Este no es el numero del propietario del bot❗\n\nby shanduy',MessageType.text, { quoted: mek} )
-                break
+                break*/
 	case 'hidetag':
                 client.updatePresence(from, Presence.composing) 
                 if (!isUser) return reply(mess.only.daftarB)
